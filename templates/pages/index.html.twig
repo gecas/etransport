@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="product-list-wrapper">
+            <div class="product-list">
+                <div class="product-list-item">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="{{ asset('images/undraw_hot_beverage_2vw3.svg') }}" alt="Coffee"
+                                     style="width:400px;height:400px;">
+                                <h3>Coffee</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Coffee</h1>
+                                <a href="/coffee" class="btn btn-warning">Order coffee</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list-item">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="{{ asset('images/undraw_Gardening_eaf3.svg') }}" alt="Flowers"
+                                     style="width:400px;height:400px;">
+                                <h3>Flowers</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Flowers</h1>
+                                <a href="/flowers" class="btn btn-warning">Order flowers</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
