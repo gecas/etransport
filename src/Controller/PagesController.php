@@ -21,8 +21,7 @@ class PagesController extends AbstractController
      */
     public function coffee()
     {
-        return Response::create('Coffee');
-        return $this->render('pages/index.html.twig');
+        return $this->render('pages/coffee.html.twig');
     }
 
     /**
@@ -30,7 +29,7 @@ class PagesController extends AbstractController
      */
     public function flowers()
     {
-        return Response::create('Flowers');
+        return $this->render('pages/flowers.html.twig');
     }
 
     /**
